@@ -1,0 +1,24 @@
+@{
+  Layout = "_Layout";
+}
+
+@model HairSalon.Models.Stylist
+@using HairSalon.Models
+
+<h2><em>Stylist:</em> @Model.Name</h2>
+<hr>
+<h3>@Model.Name's Clients:</h3>
+@if (Model.Clients.Count == 0)
+{
+    <p>No clients have been added yet.</p>
+}
+
+@foreach(Client client in @Model.Clients)
+{
+    <li>@client.Name</li>
+}
+
+
+
+
+<button class="btn btn-default">@Html.ActionLink("Back to Stylists List", "Index")</button>
