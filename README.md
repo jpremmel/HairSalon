@@ -11,6 +11,8 @@ _This application allows a salon owner to interact with a database to keep track
 ## Setup/Installation Requirements
 
 * _Clone this repository_
+* _Use MySQL to create the database by running the following commands:_
+  * __
 * _Navigate to the "HairSalon" main directory_
 * _Navigate to the "HairSalon" project sub-directory_
 * _Run the command "dotnet restore"_
