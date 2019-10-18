@@ -11,7 +11,7 @@ _This application allows a salon owner to interact with a database to keep track
 ## Setup/Installation Requirements
 
 * _Clone this repository_
-* _Use MySQL to create the database by running the following commands:_
+* _log into MySQL via the terminal and create the database by running the following commands:_
   * _> CREATE DATABASE jacqueline_remmel_
   * _> USE jacqueline_remmel_
   * _> CREATE TABLE stylists (StylistId serial PRIMARY KEY, Name VARCHAR(255));_
