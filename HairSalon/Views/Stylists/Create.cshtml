@@ -7,11 +7,9 @@
 
 @using (Html.BeginForm())
 {
-    @Html.LabelFor(model => model.Name)
-    @Html.TextBoxFor(model => model.Name, new { @class="form-control form-inline"})
+    @Html.LabelFor(model => model.Name) @Html.TextBoxFor(model => model.Name, new { @class="form-control"})
 
-    @Html.LabelFor(model => model.Description)
-    @Html.TextBoxFor(model => model.Description, new { @class="form-control form-inline"})
+    @Html.LabelFor(model => model.Description) @Html.TextBoxFor(model => model.Description, new { @class="form-control"})
 
     <input type="submit" value="Add Stylist" class="btn btn-default"/>
 }

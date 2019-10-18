@@ -5,9 +5,10 @@
 @model HairSalon.Models.Stylist
 @using HairSalon.Models
 
-<h2><em>Stylist:</em> @Model.Name</h2>
+<h2>Stylist: @Model.Name</h2>
 <hr>
-<h3>@Model.Name's Clients:</h3>
+<p><em>@Model.Description</em></p>
+<h4>@Model.Name's Clients:</h4>
 @if (Model.Clients.Count == 0)
 {
     <p>No clients have been added yet.</p>
