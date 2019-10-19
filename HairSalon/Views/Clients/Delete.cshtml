@@ -1,0 +1,15 @@
+@{
+  Layout = "_Layout";
+}
+
+@model HairSalon.Models.Client
+
+<h2>Delete Client</h2>
+<hr>
+<h3><strong>Are you sure you want to delete @Model.Name?</strong></h3>
+@using (Html.BeginForm())
+{
+    <input type="submit" value="Yes, Delete This Client" class="btn btn-default" />
+}
+
+<button class="btn btn-default">@Html.ActionLink("Back To ???", "???", new { id = @Model.StylistId })</button>
