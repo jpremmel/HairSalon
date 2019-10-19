@@ -7,7 +7,14 @@
 
 <h2>Client: @Model.Name</h2>
 <hr>
-<p>@Model.Description</p>
+@if (!String.IsNullOrEmpty(Model.PhoneNumber))
+{
+  <p><strong>Phone Number: </strong>@Model.PhoneNumber</p>
+}
+@if (!String.IsNullOrEmpty(Model.Description))
+{
+  <p><strong>More Info About @Model.Name: </strong>@Model.Description</p>
+}
 
 <button class="btn btn-default">@Html.ActionLink("Delete This Client", "Delete", new { id = Model.ClientId })</button>
 <button class="btn btn-default">@Html.ActionLink("Back to Clients List", "Details", "Stylists", new { id = Model.StylistId })</button>

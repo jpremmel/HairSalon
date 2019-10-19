@@ -7,16 +7,27 @@
 
 <h2>Stylist: @Model.Name</h2>
 <hr>
-<p><em>@Model.Description</em></p>
+@if (!String.IsNullOrEmpty(Model.HireDate))
+{
+  <p><strong>Eau Claire's Stylist Since: </strong>@Model.HireDate</p>
+}
+@if (Model.HourlyWage != 0)
+{
+  <p><strong>Hourly Wage: </strong>$@Model.HourlyWage</p>
+}
+@if (!String.IsNullOrEmpty(Model.Description))
+{
+  <p><strong>More Info About @Model.Name: </strong>@Model.Description</p>
+}
+<hr>
 <h4>@Model.Name's Clients:</h4>
 @if (Model.Clients.Count == 0)
 {
-    <p>No clients have been added yet.</p>
+  <p>No clients have been added yet.</p>
 }
-
 @foreach(Client client in @Model.Clients)
 {
-    <li>@Html.ActionLink($"{client.Name}", "Details", "Clients", new { id = client.ClientId })</li>
+  <li>@Html.ActionLink($"{client.Name}", "Details", "Clients", new { id = client.ClientId })</li>
 }
 
 <button class="btn btn-default">@Html.ActionLink("Add a Client", "Create", "Clients", new { id = Model.StylistId })</button>
