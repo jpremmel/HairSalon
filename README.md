@@ -14,8 +14,8 @@ _This application allows a salon owner to interact with a database to keep track
 * _Log into MySQL via the terminal and create the database by running the following commands:_
   * _> CREATE DATABASE jacqueline_remmel;_
   * _> USE jacqueline_remmel;_
-  * _> CREATE TABLE stylists (StylistId serial PRIMARY KEY, Name VARCHAR(255));_
-  * _> CREATE TABLE clients (ClientId serial PRIMARY KEY, StylistId INT, Name VARCHAR(255));_
+  * _> CREATE TABLE stylists (StylistId serial PRIMARY KEY, Name VARCHAR(255), Description VARCHAR(255), HireDate VARCHAR(255), HourlyWage INT);
+  * _> CREATE TABLE clients (ClientId serial PRIMARY KEY, StylistId INT, Name VARCHAR(255), Description VARCHAR(255), PhoneNumber VARCHAR(255));_
 * _Navigate to the "HairSalon" main directory_
 * _Navigate to the "HairSalon" project sub-directory_
 * _Run the command "dotnet restore"_
