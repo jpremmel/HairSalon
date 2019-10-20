@@ -3,15 +3,38 @@
     margin: 15px;
     margin-left: auto;
     margin-right: auto;
+    color: #404040;
 }
 
 .form-control {
     width: 400px;
 }
 
-/* .chairs-background {
-    background-image: url("~/img/chairs.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+h1, h2 {
+    font-family: 'Sacramento', cursive;
+}
+
+.splash {
     text-align: center;
-} */
+    font-size: 90px;
+}
+
+body {
+    background-color: #e6ffff;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: auto;
+}
+
+.container {
+    width: 60%;
+}
+
+a {
+    color: #404040;
+  }

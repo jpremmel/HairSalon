@@ -4,7 +4,7 @@
 
 @model HairSalon.Models.Stylist
 
-<h2>Edit Stylist</h2>
+<h1>Edit Stylist</h1>
 <hr>
 @using (Html.BeginForm())
 {
@@ -22,5 +22,3 @@
 }
 
 <button class="btn btn-default">@Html.ActionLink("Back To Stylist", "Details", new { id = @Model.StylistId })</button>
-
-<button class="btn btn-default">@Html.ActionLink("See full restaurants list", "Index")</button>
